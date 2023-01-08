@@ -95,7 +95,7 @@ export class App extends Component {
         <ImageGallery hits={items} onItemClick={this.openModal} />
         {pages > page && <Button onClick={this.handleLoadMore} />}
         {url && (
-          <Modal onClose={this.closeModal}>
+          <Modal close={this.closeModal}>
             <img src={url} alt={alt} />
           </Modal>
         )}
